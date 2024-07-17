@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function ToDo() {
   const [current, setCurrent] = useState("");
   return (
-    <main className="flex  flex-col items-center justify-between px-10 py-10 max-w-[1200px] bg-sky-400 mx-auto ">
+    <div className="flex  flex-col items-center justify-between px-10 py-10   mx-auto ">
       <h1 className="text-3xl font-bold mb-5">
         {current ? "" : "This title will change according to  the tasks state"}
       </h1>
@@ -18,6 +18,6 @@ export default function ToDo() {
         <TaskCrudContainer />
         <TaskCrudContainer />
       </div>
-    </main>
+    </div>
   );
 }

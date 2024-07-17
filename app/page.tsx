@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { DiVisualstudio } from "react-icons/di";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center justify-between container">
       <h1 className="text-3xl font-bold">Hello World</h1>
       <p className="p-10 w-1/2 text-center text-2xl">
         a to-app that gives you the ability to create to-do list with repeated
