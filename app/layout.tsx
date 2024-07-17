@@ -17,11 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative`}>
-        <div className="content mx-auto">
-          <Header />
-          {children}
-        </div>
+      <body className={`${inter.className} box-border`}>
+        <Header />
+        {children}
       </body>
     </html>
   );
