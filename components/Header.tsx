@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex sticky top-0 z-10 items-center justify-between md:py-5 px-5 md:px-24 max-w-7xl mx-auto  bg-gray-200 ">
+    <header className="flex sticky md:top-5 z-10 items-center mb-20 md:rounded-full  justify-between md:py-5 px-5 md:px-24 md:max-w-screen-sm lg:max-w-screen-lg mx-auto  bg-gray-200 ">
       <Link href="/" className="text-2xl font-bold">
         Yawmi
       </Link>

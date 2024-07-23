@@ -69,8 +69,8 @@
   }
 }
 
-@layer components {
+@layer utilities {
   .container {
-    @apply lg:py-12 lg:px-24 mx-auto max-w-7xl;
+    @apply max-w-screen-lg lg:py-12 lg:px-24 mx-auto;
   }
 }

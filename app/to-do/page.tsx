@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function ToDo() {
   const [current, setCurrent] = useState("");
   return (
-    <div className="flex  flex-col items-center justify-between px-10 py-10   mx-auto ">
+    <div className="container flex  flex-col items-center justify-between">
       <h1 className="text-3xl font-bold mb-5">
         {current ? "" : "This title will change according to  the tasks state"}
       </h1>
