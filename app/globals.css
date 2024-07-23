@@ -71,6 +71,6 @@
 
 @layer utilities {
   .container {
-    @apply max-w-screen-lg lg:py-12 lg:px-24 mx-auto;
+    @apply max-w-screen-lg px-3 lg:py-12 lg:px-24 mx-auto overflow-x-hidden;
   }
 }

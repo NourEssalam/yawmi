@@ -3,18 +3,36 @@ import { MdOutlineDeleteForever } from "react-icons/md";
 
 import { CiEdit } from "react-icons/ci";
 import { useState } from "react";
+import { Toddo } from "@/lib/types";
 
-export default function TaskCrudContainer() {
+export default function TaskCrudContainer({
+  id,
+  description,
+  completed,
+}: Toddo) {
+  const [actions, setActions] = useState(false);
   const [delDesc, setDelDesc] = useState(false);
   const [editDesc, setEditDesc] = useState(false);
 
   return (
-    <div className="grid grid-cols-[80%_20%] gap-4  w-full">
+    <div
+      className="grid grid-cols-[85%_15%] gap-2  w-full border-b p-4"
+      onMouseEnter={() => setActions(true)}
+      onMouseLeave={() => setActions(false)}
+    >
       {/* checkbox */}
-      <CheckboxWithText />
+      <CheckboxWithText
+        id={id}
+        description={description}
+        completed={completed}
+      />
 
       {/* crud actions */}
-      <div className="bg-yellow-300 flex justify-center space-x-4 items-center">
+      <div
+        className={`flex  flex-col md:flex-row justify-center space-y-2 md:space-x-4 md:space-y-0 items-center  ${
+          actions ? "visible" : "hidden"
+        }`}
+      >
         {/* edit */}
         <div className="relative">
           <CiEdit

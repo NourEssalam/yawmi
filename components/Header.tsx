@@ -6,6 +6,10 @@ export default function Header() {
       <Link href="/" className="text-2xl font-bold">
         Yawmi
       </Link>
+      <Link href="/to-do" className="text-2xl font-bold">
+        To Do
+      </Link>
+
       <div className="flex flex-col md:flex-row items-center ">
         <Link
           href="/auth/login"
