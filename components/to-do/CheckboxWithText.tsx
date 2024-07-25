@@ -13,16 +13,10 @@ export default function CheckboxWithText({
     <div className="items-top flex  space-x-4  ">
       <Checkbox id={id} className="" />
       <div className="grid gap-1.5 leading-none">
-        <label
-          htmlFor={id}
-          className="md:font-medium text-xs  text-justify  leading-relaxed  peer-disabled:cursor-not-allowed peer-disabled:opacity-70 block md:hidden"
-        >
+        <label className="md:font-medium capitalize text-xs  text-justify  leading-relaxed  peer-disabled:cursor-not-allowed peer-disabled:opacity-70 block md:hidden">
           <div dangerouslySetInnerHTML={shortenMedium(description, 80)} />
         </label>
-        <label
-          htmlFor={id}
-          className="hidden md:block md:font-medium text-xs md:text-lg text-justify  leading-relaxed  peer-disabled:cursor-not-allowed peer-disabled:opacity-70 "
-        >
+        <label className="hidden md:block capitalize md:font-medium text-xs md:text-lg text-justify  leading-relaxed  peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ">
           <div dangerouslySetInnerHTML={shortenMedium(description, 150)} />
         </label>
       </div>

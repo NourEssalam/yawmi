@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 
 export default function DashboardLayout({
   children, // will be a page or nested layout
@@ -6,16 +9,22 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="">
-      <h1>Registration Dashboard</h1>
-      {/* Include shared UI here e.g. a header or sidebar */}
-      <nav className="flex gap-4">
-        <Link href="/auth">Home</Link>
-        <Link href="/auth/login">Login</Link>
-        <Link href="/auth/signin">Sign In</Link>
-      </nav>
+    <section className=" container flex flex-col gap-3 justify-center items-center">
+      <div className="w-full md:w-1/2  border-l border-r border-gray-300 p-5 rounded max-h-80 overflow-y-scroll">
+        {children}
+      </div>
 
-      {children}
+      <div className="flex justify-between md:justify-around md:w-1/4 w-1/2  p-5 rounded text-2xl">
+        <Link href="https://github.com/">
+          <FaGithub className="hover:text-black/80 " />
+        </Link>
+        <Link href="https://github.com/">
+          <FaFacebook className="hover:text-blue-600" />
+        </Link>
+        <Link href="https://github.com/">
+          <FaGoogle className="hover:text-red-600" />
+        </Link>
+      </div>
     </section>
   );
 }

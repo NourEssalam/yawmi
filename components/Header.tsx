@@ -19,10 +19,10 @@ export default function Header() {
         </Link>
         {/* <span>|</span> */}
         <Link
-          href="/auth/signin"
+          href="/auth/signup"
           className="hover:underline font-semibold text-black  visited:underline border-t md:border-l md:border-t-0 md:px-2 border-black py-1"
         >
-          Sign-In
+          Sign-Up
         </Link>
       </div>
     </header>

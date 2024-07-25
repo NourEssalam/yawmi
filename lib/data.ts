@@ -3,13 +3,12 @@ import { Toddo } from "./types";
 export const todoData: Toddo[] = [
   {
     id: "1",
-    description: "aliases After Me, After Logout, and After Refresh ",
+    description: "Go to the market",
     completed: false,
   },
   {
     id: "2",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempors Sed do eiusmod tempors",
+    description: "Cooking some italian meals and baking some breads for my mom",
     completed: true,
   },
   {

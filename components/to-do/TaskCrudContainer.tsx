@@ -16,9 +16,10 @@ export default function TaskCrudContainer({
 
   return (
     <div
-      className="grid grid-cols-[85%_15%] gap-2  w-full border-b p-4"
+      className="grid grid-cols-[85%_15%] gap-2  w-full border-b p-4 shadow "
       onMouseEnter={() => setActions(true)}
       onMouseLeave={() => setActions(false)}
+      onTouchStart={() => setActions(!actions)}
     >
       {/* checkbox */}
       <CheckboxWithText
